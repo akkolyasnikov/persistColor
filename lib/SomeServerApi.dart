@@ -10,7 +10,6 @@ class SomeServerApi {
   static load() async {
     SharedPreferences shp = await SomeServerApi._init();
     var res = shp.getString('color');
-
     return colorFromString(res);
   }
 
@@ -24,7 +23,6 @@ class SomeServerApi {
   static save(Color color)  {
     SomeServerApi._init().then((prefInst) {
       prefInst.setString('color', color.toString());
-      
     });
   }
 }

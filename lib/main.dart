@@ -9,7 +9,7 @@ main() {
 class ColorApp extends StatelessWidget {
   final Widget child;
 
-  ColorApp({Key key, this.child}) : super(key: key);
+  ColorApp({this.child});
 
   @override
   Widget build(BuildContext context) {

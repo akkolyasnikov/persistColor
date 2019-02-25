@@ -11,7 +11,6 @@ class ColorModel extends Model {
       notifyListeners();
     });
   }
-  var z = SomeServerApi.load();
   Color _color;
   Color get color => _color;
   randomColor() {
