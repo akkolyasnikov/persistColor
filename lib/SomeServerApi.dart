@@ -21,10 +21,10 @@ class SomeServerApi {
     return otherColor;
   }
 
-  static save(Color color) async {
+  static save(Color color)  {
     SomeServerApi._init().then((prefInst) {
       prefInst.setString('color', color.toString());
-      return Future(() => 42);
+      
     });
   }
 }
