@@ -20,8 +20,7 @@ class ColorApp extends StatelessWidget {
 }
 
 class ColorMainScreen extends StatelessWidget {
-  final Color color;
-  ColorMainScreen({this.color});
+  ColorMainScreen();
 
   @override
   Widget build(BuildContext context) {
